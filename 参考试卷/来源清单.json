@@ -1,0 +1,101 @@
+{
+  "retrieved": "2026-10-21",
+  "sources": [
+    {
+      "id": "SYSU_09_B",
+      "file": "SYSU_09_B.pdf",
+      "url": "https://raw.githubusercontent.com/ConstHall/SYSU_SDCS_Final_Exams/master/数据结构 期末试卷/09数据结构与算法试题B.pdf",
+      "page_url": "https://github.com/ConstHall/SYSU_SDCS_Final_Exams/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%20%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/09%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%95%E9%A2%98B.pdf",
+      "label": "09数据结构与算法试题B.pdf",
+      "verified_term": "2010秋季学期，2009级",
+      "pages": 5,
+      "completeness": "5/5页",
+      "type": "学生仓库转载原卷",
+      "scores": {
+        "选择": 15,
+        "填空": 15,
+        "解答": 36,
+        "编程": 34
+      },
+      "sha256": "ac094e17b9f680e096c8fab16520d85fa50874e9d8d54d1f035368be3557dba0"
+    },
+    {
+      "id": "SYSU_10_B",
+      "file": "SYSU_10_B.pdf",
+      "url": "https://raw.githubusercontent.com/ConstHall/SYSU_SDCS_Final_Exams/master/数据结构 期末试卷/10级软件学院《数据结构与算法》期末考试 题B卷.pdf",
+      "page_url": "https://github.com/ConstHall/SYSU_SDCS_Final_Exams/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%20%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/10%E7%BA%A7%E8%BD%AF%E4%BB%B6%E5%AD%A6%E9%99%A2%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20%E9%A2%98B%E5%8D%B7.pdf",
+      "label": "10级软件学院《数据结构与算法》期末考试 题B卷.pdf",
+      "verified_term": "2011秋季学期，2010级",
+      "pages": 4,
+      "completeness": "4/4页",
+      "type": "学生仓库转载原卷",
+      "scores": {
+        "选择": 30,
+        "解答": 45,
+        "编程": 25
+      },
+      "sha256": "811b0170b56059def9e36ebc4644abda7a2fca2e6e44c7db084fd0ccada7ca2e"
+    },
+    {
+      "id": "SYSU_2008_B",
+      "file": "SYSU_2008_B.pdf",
+      "url": "https://raw.githubusercontent.com/ConstHall/SYSU_SDCS_Final_Exams/master/数据结构 期末试卷/2008：数据结构与算法（B卷）.pdf",
+      "page_url": "https://github.com/ConstHall/SYSU_SDCS_Final_Exams/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%20%E6%9C%9F%E6%9C%AB%E8%AF%95%E5%8D%B7/2008%EF%BC%9A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88B%E5%8D%B7%EF%BC%89.pdf",
+      "label": "2008：数据结构与算法（B卷）.pdf",
+      "verified_term": "2009秋季学期，2008级",
+      "pages": 4,
+      "completeness": "4/4页",
+      "type": "学生仓库转载原卷",
+      "sha256": "401e5fb4ced0e619900777b6f94c6a804b92c0c93060b72be5a6279f9d874468"
+    },
+    {
+      "id": "SZU_2024",
+      "file": "SZU_2024.pdf",
+      "url": "https://raw.githubusercontent.com/WenjunLi2004/SZU-Course/main/大二上/数据结构/试卷练习/2024年深圳大学数据结构试卷.pdf",
+      "page_url": "https://github.com/WenjunLi2004/SZU-Course/blob/main/大二上/数据结构/试卷练习/2024年深圳大学数据结构试卷.pdf",
+      "label": "2024年深圳大学数据结构试卷",
+      "verified_term": null,
+      "date_note": "2024仅据仓库文件名，照片缺少完整卷头",
+      "pages": 5,
+      "completeness": "不完整；卷面标注共8页，有裁切",
+      "type": "学生仓库转载照片，非标准答案",
+      "sha256": "103d38e05e73ebac8dfa1bc5dc0e5589663852fc49bb564ff55c939512d2a79e"
+    },
+    {
+      "id": "GDUT_2014",
+      "file": "GDUT_2014.docx",
+      "url": "https://raw.githubusercontent.com/gdutday/gdut-lib/master/数据结构/试卷/2014数据结构试卷.docx",
+      "page_url": "https://github.com/gdutday/gdut-lib/blob/master/数据结构/试卷/2014数据结构试卷.docx",
+      "label": "仓库标注2014数据结构试卷",
+      "verified_exam_date": "2014-07-02",
+      "completeness": "DOCX内8张卷面照片，原卷8页",
+      "type": "学生仓库转载原卷；批注非标准答案",
+      "scores": {
+        "选择": 16,
+        "填空": 8,
+        "解答": 44,
+        "算法填空": 24,
+        "算法设计": 8
+      },
+      "extra_credit": 5,
+      "sha256": "1775700d6036c2e14a0e99a3428e72335224903614c49af9189b4a3bb13bb722"
+    }
+  ],
+  "supplemental_sources": [
+    {
+      "id": "SCNU_2003_preview",
+      "url": "https://www.renrendoc.com/paper/223322388.html",
+      "classification": "旧卷转载预览，非官方核实，图及末尾缺失"
+    },
+    {
+      "id": "SCNU_2022_cohort_notes",
+      "url": "https://github.com/vajackye/SCNU-CS2022-Courses",
+      "classification": "学生复习笔记，非试卷"
+    },
+    {
+      "id": "SZU_2024_recollection",
+      "url": "https://github.com/WenjunLi2004/SZU-Course/blob/main/大二上/数据结构/README.md",
+      "classification": "学生2024-01-06考试回忆，与照片是否同场未确认"
+    }
+  ]
+}

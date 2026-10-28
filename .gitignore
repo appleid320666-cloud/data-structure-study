@@ -1,0 +1,23 @@
+# 桌面原始资料和实验文件保留本地；仓库课件位于 notes/。
+/*.pdf
+/work1/
+/work2/
+
+# 提取缓存、原卷包、临时图片不进入学习记录仓库。
+/tmp/
+/参考试卷/原卷/
+/参考试卷/GDUT_2014_images/
+/参考试卷/*.txt
+
+# 运行与编辑器临时文件。
+__pycache__/
+*.py[cod]
+*.exe
+*.obj
+*.o
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+.env.*

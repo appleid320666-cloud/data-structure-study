@@ -26,4 +26,7 @@ SYSU-2009B 第3题；GDUT-2014 一.2、二.1、四.1、四.4、五。题号解�
 
 ## 学习记录
 
-尚无实际学习记录。学习后按[记录模板](../../templates/session.md)新增 `sessions/YYYY-MM-DD-topic.md`，错题使用[错题模板](../../templates/mistake.md)。
+- [2026-10-21 链表插入删除步骤与指针概念](sessions/2026-10-21-pointer-operations.md)：既有对话与桌面材料的追溯登记；已提供讲解，尚无独立作答或掌握评估。
+- [习题 6.1 第（2）、（3）题详解与配图](../../章节学习/第06章-列表（链表）/6.1-第2、3题详解（新版课件）.md)。
+
+后续按[记录模板](../../templates/session.md)新增 `sessions/YYYY-MM-DD-topic.md`，错题使用[错题模板](../../templates/mistake.md)。
