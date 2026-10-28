@@ -11,6 +11,7 @@
 
 # 已建立的课程上下文
 
+- 当前主课件已于 2026-10-28 按用户明确要求覆盖旧版：桌面 `数据结构课件.pdf` 与仓库 `notes/ds-note1028.pdf` 内容一致，共 369 页，SHA-256 为 `05F93C1B7E775909CF31936A11953DFCF9B41680DFFD7B0B844CB7C758847932`。已复核新版目录及第 182—184、194—196 页；Figure 7.8 在第 184 页，习题 7.1 在第 194 页。第 7 章为 168—195 页，第 8 章从 196 页开始。以下 10 月 21 日版本信息是历史记录；当前页码以新版索引为准。
 - 主资料：`数据结构课件.pdf`。截至首次阅读共 369 页，封面日期为 2026-10-14。
 - 2026-10-21 课件再次更新，当前版本共 368 页，SHA-256 为 `A3BCD09884E4DC6ACFFBE655E2C15A1CF86C926E425120126E3D0BA0EF11C65E`。已重新核对 PDF 第 158—160 页：图 6.8 后插、图 6.9 前插、图 6.10 删除。习题 6.1 第（2）、（3）题新版笔记已保存于第 6 章；旧版将图 6.9 视为后插的推导不能套用到新版第（2）题。其他章节的旧阅读记录尚未逐项复核本次更新。
 - 已通读课程介绍及第 1—7 章（PDF 第 1—195 页），并查阅作业安排。章节页码和阅读结论见 `课程阅读记录.md`。
@@ -38,7 +39,7 @@
 
 # 已有 GitHub 仓库约定的合并保留
 
-- 仓库先前已有 `notes/ds-note1021.pdf`、`chapters/`、`docs/`、`exams/`、`templates/` 与 `.agents/skills/`；已同步桌面，保留既有记录与原始 PDF，不覆盖不同版本。课件使用前比较版本；`课程阅读记录.md` 中旧版页码不能直接代替 `docs/chapter-map.md` 的新版索引。
+- 仓库已有 `notes/`、`chapters/`、`docs/`、`exams/`、`templates/` 与 `.agents/skills/`，已同步桌面并保留既有学习记录。当前课件为 `notes/ds-note1028.pdf`；本轮用户明确授权覆盖旧课件，旧仓库版本保存在 Git 历史。课件使用前比较版本；`课程阅读记录.md` 中旧版页码不能直接代替 `docs/chapter-map.md` 的新版索引。
 - 工作入口：`docs/course-profile.md`、`docs/chapter-map.md`、`docs/study-plan.md`。教学、复习、批改时读取 `.agents/skills/ds-exam-tutor/SKILL.md`；搜集或引用高校试题时读取 `.agents/skills/exam-source-curator/SKILL.md`。非相关任务不必加载教学技能。
 - 主语言 C（默认 C11），Python 3 辅助；给定 C++ 接口时遵循题目，并明确 C/C++ 差别，不把 C++ 语法当 C。
 - 课件章节按第 00—16 章编号，中文 `章节学习/` 的现有第 1—15 章继续保留。知识点详解优先存中文章节目录；每次实际学习记录按 `templates/session.md` 登记到 `chapters/XX-name/sessions/YYYY-MM-DD-topic.md` 并互链，同日多次加主题后缀；错题用 `templates/mistake.md`。日期使用 Asia/Shanghai。
