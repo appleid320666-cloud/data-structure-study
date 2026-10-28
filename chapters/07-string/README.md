@@ -26,4 +26,6 @@ GDUT-2014 一.4、二.7。题号解释、来源链接与补充内容标记见[�
 
 ## 学习记录
 
-尚无实际学习记录。学习后按[记录模板](../../templates/session.md)新增 `sessions/YYYY-MM-DD-topic.md`，错题使用[错题模板](../../templates/mistake.md)。
+- [2026-10-28：串的概念与蛮力匹配](sessions/2026-10-28-basics-and-brute-force.md)（讲解材料已整理，待独立作答，掌握情况未评估）。
+
+后续按[记录模板](../../templates/session.md)新增 `sessions/YYYY-MM-DD-topic.md`，错题使用[错题模板](../../templates/mistake.md)。
