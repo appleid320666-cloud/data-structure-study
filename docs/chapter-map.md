@@ -1,6 +1,6 @@
 # 课件章节索引
 
-依据 2026-10-28 新版 PDF 目录（pp.2–8），共 369 页。本轮复核目录与本次教学页，未逐页复读全部正文。页码为 PDF 物理页序；教材采用主题对照，精确节号和页码待读到教材后补充。所有章节当前均为“备课”，不代表已经学完。
+依据 2026-11-04 新版 PDF 目录（pp.2–8），共 376 页。本轮复核目录与本次教学页，未逐页复读全部正文。页码为 PDF 物理页序；教材采用主题对照，精确节号和页码待读到教材后补充。所有章节当前均为“备课”，不代表已经学完。
 
 | 章 | 课件标题与备课卡 | PDF 页码 |
 | --- | --- | --- |
@@ -11,21 +11,28 @@
 | 4 | [算法的复杂度](../chapters/04-complexity/README.md) | 68–84 |
 | 5 | [向量（Vector）](../chapters/05-vector/README.md) | 85–149 |
 | 6 | [列表（List）](../chapters/06-list/README.md) | 150–167 |
-| 7 | [字符串（String）](../chapters/07-string/README.md) | 168–195 |
-| 8 | [栈与队列（Stack and Queue）](../chapters/08-stack-queue/README.md) | 196–208 |
-| 9 | [词典（Dictionary）](../chapters/09-dictionary/README.md) | 209–215 |
-| 10 | [优先级队列（Priority Queue）](../chapters/10-priority-queue/README.md) | 216–216 |
-| 11 | [二叉树（Binary Tree）](../chapters/11-binary-tree/README.md) | 217–253 |
-| 12 | [二叉搜索树（Binary Search Tree）](../chapters/12-binary-search-tree/README.md) | 254–272 |
-| 13 | [图（Graph）](../chapters/13-graph/README.md) | 273–316 |
-| 14 | [随机图模型](../chapters/14-random-graphs/README.md) | 317–334 |
-| 15 | [图上的动力学过程](../chapters/15-graph-dynamics/README.md) | 335–361 |
-| 16 | [作业安排](../chapters/16-assignments/README.md) | 362–365 |
+| 7 | [字符串（String）](../chapters/07-string/README.md) | 168–201 |
+| 8 | [栈与队列（Stack and Queue）](../chapters/08-stack-queue/README.md) | 202–215 |
+| 9 | [词典（Dictionary）](../chapters/09-dictionary/README.md) | 216–222 |
+| 10 | [优先级队列（Priority Queue）](../chapters/10-priority-queue/README.md) | 223–223 |
+| 11 | [二叉树（Binary Tree）](../chapters/11-binary-tree/README.md) | 224–260 |
+| 12 | [二叉搜索树（Binary Search Tree）](../chapters/12-binary-search-tree/README.md) | 261–279 |
+| 13 | [图（Graph）](../chapters/13-graph/README.md) | 280–323 |
+| 14 | [随机图模型](../chapters/14-random-graphs/README.md) | 324–341 |
+| 15 | [图上的动力学过程](../chapters/15-graph-dynamics/README.md) | 342–368 |
+| 16 | [作业安排](../chapters/16-assignments/README.md) | 369–372 |
 
-第 366–369 页是参考文献，不另设学习章节。查找、排序属于课件第 5 章，不能按其他教材习惯重排为独立章。
+第 373–376 页是参考文献，不另设学习章节。查找、排序属于课件第 5 章，不能按其他教材习惯重排为独立章。
 
 ## 教材主题对应（尚未核验教材目录）
 
 课件向量/列表 → 教材线性表主题；课件字符串 → 串主题；课件栈与队列 → 栈和队列主题；二叉树/BST/图/查找/排序按同主题对照。此处是概念对应，不是教材章号或范围声明。
 
 课件随机图与图动力学独立保留。教材中的其他主题（如广义表、稀疏矩阵等）只有核实教材正文或教师范围后再列具体对应；外校考到不能直接推成本校范围。
+
+## 2026-11-04 第七章图号与题号核验
+
+- 普通 Next 直接构造：§7.6 第 2 小节 p.185，Figure 7.12；不能继续用旧版 Figure 7.8 指代新版图。
+- 更新版 nNext 直接构造：§7.6 第 6 小节 p.194，Figure 7.19 在 p.195。
+- 习题 7.1、7.2 在 p.200；第 8 章从 p.202 开始。
+- 此次只复核新版目录及相关教学原页，未重新通读全部 376 页。旧笔记保留其版本页码，不自动改写历史记录。
