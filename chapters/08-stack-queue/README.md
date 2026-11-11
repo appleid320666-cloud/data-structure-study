@@ -26,4 +26,4 @@ SYSU-2009B 第1题；GDUT-2014 一.3、二.5、四.2。题号解释、来源链�
 
 ## 学习记录
 
-尚无实际学习记录。学习后按[记录模板](../../templates/session.md)新增 `sessions/YYYY-MM-DD-topic.md`，错题使用[错题模板](../../templates/mistake.md)。
+- [2026-11-11 习题 8.3（1）栈混洗](sessions/2026-11-11-stack-shuffle-ex1.md)。
