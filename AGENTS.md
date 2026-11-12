@@ -11,7 +11,8 @@
 
 # 已建立的课程上下文
 
-- 2026-11-04 用户提供最新 `ds-note1104.pdf`；现用桌面 `数据结构课件.pdf` 与 `notes/ds-note1104.pdf`，376 页，SHA-256 `51AF92C49E8E885A832C19979546F8CF171ECE1DA147A0E7D751B21402EF5011`。本轮核对目录及 §7.6 更新版直接构造相关页：方法 p.194，Figure 7.19 p.195，习题 7.2 p.200；第七章 pp.168–201，第八章 p.202 起。保留 `notes/ds-note1028.pdf` 供旧笔记链接使用；下述 10 月版本记录均为历史。未重读全部新版正文。
+- 2026-11-12 用户提供 `ds-note1112.pdf`；现用桌面 `数据结构课件.pdf` 与 `notes/ds-note1112.pdf`，382 页，SHA-256 `DD5C3328C55962D513A97277FB82BEA4B5549EAB1E3C9D75A1C3107DA86F9F52`。已核对目录及第 8 章相关原页：第 8 章 pp.202–215，Figure 8.4 p.209，习题 8.3 p.214（含第 1–4 小问），Figure 8.8 p.215。未逐页复核新版正文。
+- 2026-11-04 版 `notes/ds-note1104.pdf`（376 页）保留供历史笔记引用。该版已核对目录及 §7.6 更新版直接构造相关页：方法 p.194，Figure 7.19 p.195，习题 7.2 p.200；第七章 pp.168–201，第八章 p.202 起。
 
 - 历史主课件于 2026-10-28 按用户明确要求覆盖旧版：桌面 `数据结构课件.pdf` 与仓库 `notes/ds-note1028.pdf` 内容一致，共 369 页，SHA-256 为 `05F93C1B7E775909CF31936A11953DFCF9B41680DFFD7B0B844CB7C758847932`。已复核新版目录及第 182—184、194—196 页；Figure 7.8 在第 184 页，习题 7.1 在第 194 页。第 7 章为 168—195 页，第 8 章从 196 页开始。以下 10 月 21 日版本信息是历史记录；当前页码以新版索引为准。
 - 主资料：`数据结构课件.pdf`。截至首次阅读共 369 页，封面日期为 2026-10-14。
@@ -43,7 +44,7 @@
 
 # 已有 GitHub 仓库约定的合并保留
 
-- 仓库已有 `notes/`、`chapters/`、`docs/`、`exams/`、`templates/` 与 `.agents/skills/`，已同步桌面并保留既有学习记录。当前课件为 `notes/ds-note1104.pdf`（10 月版 `notes/ds-note1028.pdf` 保留供历史链接使用）；本轮用户明确授权覆盖旧课件，旧仓库版本保存在 Git 历史。课件使用前比较版本；`课程阅读记录.md` 中旧版页码不能直接代替 `docs/chapter-map.md` 的新版索引。
+- 仓库已有 `notes/`、`chapters/`、`docs/`、`exams/`、`templates/` 与 `.agents/skills/`，已同步桌面并保留既有学习记录。当前课件为 `notes/ds-note1112.pdf`；`notes/ds-note1104.pdf` 与 `notes/ds-note1028.pdf` 保留供历史笔记引用。课件使用前比较版本；最新页码见 `docs/chapter-map.md`。
 - 工作入口：`docs/course-profile.md`、`docs/chapter-map.md`、`docs/study-plan.md`。教学、复习、批改时读取 `.agents/skills/ds-exam-tutor/SKILL.md`；搜集或引用高校试题时读取 `.agents/skills/exam-source-curator/SKILL.md`。非相关任务不必加载教学技能。
 - 主语言 C（默认 C11），Python 3 辅助；给定 C++ 接口时遵循题目，并明确 C/C++ 差别，不把 C++ 语法当 C。
 - 课件章节按第 00—16 章编号，中文 `章节学习/` 的现有第 1—15 章继续保留。知识点详解优先存中文章节目录；每次实际学习记录按 `templates/session.md` 登记到 `chapters/XX-name/sessions/YYYY-MM-DD-topic.md` 并互链，同日多次加主题后缀；错题用 `templates/mistake.md`。日期使用 Asia/Shanghai。

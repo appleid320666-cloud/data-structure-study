@@ -1,6 +1,6 @@
 # 课件章节索引
 
-依据 2026-11-04 新版 PDF 目录（pp.2–8），共 376 页。本轮复核目录与本次教学页，未逐页复读全部正文。页码为 PDF 物理页序；教材采用主题对照，精确节号和页码待读到教材后补充。所有章节当前均为“备课”，不代表已经学完。
+依据 [2026-11-12 版 PDF](../notes/ds-note1112.pdf#page=2) 目录（pp.2–8），共 382 页。本轮核对目录与栈混洗相关原页。页码为 PDF 物理页序；教材采用主题对照，精确节号和页码待读到教材后补充。章节索引用于备课。
 
 | 章 | 课件标题与备课卡 | PDF 页码 |
 | --- | --- | --- |
@@ -13,16 +13,18 @@
 | 6 | [列表（List）](../chapters/06-list/README.md) | 150–167 |
 | 7 | [字符串（String）](../chapters/07-string/README.md) | 168–201 |
 | 8 | [栈与队列（Stack and Queue）](../chapters/08-stack-queue/README.md) | 202–215 |
-| 9 | [词典（Dictionary）](../chapters/09-dictionary/README.md) | 216–222 |
+| 9 | [散列表（Hashtable）](../chapters/09-dictionary/README.md) | 216–222 |
 | 10 | [优先级队列（Priority Queue）](../chapters/10-priority-queue/README.md) | 223–223 |
-| 11 | [二叉树（Binary Tree）](../chapters/11-binary-tree/README.md) | 224–260 |
-| 12 | [二叉搜索树（Binary Search Tree）](../chapters/12-binary-search-tree/README.md) | 261–279 |
-| 13 | [图（Graph）](../chapters/13-graph/README.md) | 280–323 |
-| 14 | [随机图模型](../chapters/14-random-graphs/README.md) | 324–341 |
-| 15 | [图上的动力学过程](../chapters/15-graph-dynamics/README.md) | 342–368 |
-| 16 | [作业安排](../chapters/16-assignments/README.md) | 369–372 |
+| 11 | [二叉树（Binary Tree）](../chapters/11-binary-tree/README.md) | 224–266 |
+| 12 | [二叉搜索树（Binary Search Tree）](../chapters/12-binary-search-tree/README.md) | 267–285 |
+| 13 | [图（Graph）](../chapters/13-graph/README.md) | 286–329 |
+| 14 | [随机图模型](../chapters/14-random-graphs/README.md) | 330–347 |
+| 15 | [图上的动力学过程](../chapters/15-graph-dynamics/README.md) | 348–374 |
+| 16 | [作业安排](../chapters/16-assignments/README.md) | 375–378 |
 
-第 373–376 页是参考文献，不另设学习章节。查找、排序属于课件第 5 章，不能按其他教材习惯重排为独立章。
+第 379–382 页是参考文献。查找、排序属于课件第 5 章。
+
+11 月 12 日版栈混洗定位：[Figure 8.4（p.209）](../notes/ds-note1112.pdf#page=209)、[习题 8.3（p.214）](../notes/ds-note1112.pdf#page=214)、[Figure 8.8（p.215）](../notes/ds-note1112.pdf#page=215)。
 
 ## 教材主题对应（尚未核验教材目录）
 
