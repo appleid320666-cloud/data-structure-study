@@ -1,4 +1,3 @@
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -24,12 +23,12 @@ static int brute_b(const char *text, int n, const char *pattern, int m)
 
 static void build_nnext(const char *pattern, int m, int next[])
 {
+    int j = 0;
+    int t = -1;
     if (m == 0) {
         return;
     }
     next[0] = -1;
-    int j = 0;
-    int t = -1;
     while (j < m - 1) {
         if (t < 0 || pattern[j] == pattern[t]) {
             ++j;
@@ -58,12 +57,12 @@ static int kmp(const char *text, int n, const char *pattern, int m,
 }
 
 /* Xorshift32 with a fixed nonzero initial seed. */
-static uint32_t random32(uint32_t *state)
+static unsigned long random32(unsigned long *state)
 {
-    uint32_t x = *state;
-    x ^= x << 13;
+    unsigned long x = *state;
+    x = (x ^ (x << 13)) & 0xffffffffUL;
     x ^= x >> 17;
-    x ^= x << 5;
+    x = (x ^ (x << 5)) & 0xffffffffUL;
     *state = x;
     return x;
 }
@@ -73,7 +72,9 @@ static double run_batch(const char *text, int n,
                         int use_kmp, int result[PATTERNS])
 {
     clock_t start = clock();
-    for (int p = 0; p < PATTERNS; ++p) {
+    clock_t end;
+    int p;
+    for (p = 0; p < PATTERNS; ++p) {
         if (use_kmp) {
             int next[MAX_PATTERN];
             build_nnext(patterns[p], m, next);
@@ -82,7 +83,7 @@ static double run_batch(const char *text, int n,
             result[p] = brute_b(text, n, patterns[p], m);
         }
     }
-    clock_t end = clock();
+    end = clock();
     if (start == (clock_t)-1 || end == (clock_t)-1 || end <= start) {
         return -1.0;
     }
@@ -104,14 +105,17 @@ static int measure(const char *text, int n, int m)
     char patterns[PATTERNS][MAX_PATTERN];
     int first = n - n / 10 - m;
     int stride = (n / 10) / PATTERNS;
-    for (int p = 0; p < PATTERNS; ++p) {
+    double time[2][REPEATS];
+    int positions[2][PATTERNS];
+    int p;
+    int r;
+    int order;
+    for (p = 0; p < PATTERNS; ++p) {
         memcpy(patterns[p], text + first + p * stride, (size_t)m);
     }
 
-    double time[2][REPEATS];
-    int positions[2][PATTERNS];
-    for (int r = 0; r < REPEATS; ++r) {
-        for (int order = 0; order < 2; ++order) {
+    for (r = 0; r < REPEATS; ++r) {
+        for (order = 0; order < 2; ++order) {
             int algorithm = (r + order) % 2;
             time[algorithm][r] = run_batch(text, n, patterns, m,
                                            algorithm, positions[algorithm]);
@@ -119,7 +123,7 @@ static int measure(const char *text, int n, int m)
                 return 0;
             }
         }
-        for (int p = 0; p < PATTERNS; ++p) {
+        for (p = 0; p < PATTERNS; ++p) {
             int hit = positions[0][p];
             if (hit < 0 || hit > first + p * stride || hit != positions[1][p]
                 || memcmp(text + hit, patterns[p], (size_t)m) != 0) {
@@ -139,17 +143,19 @@ int main(void)
     const int lengths[] = {100000, 250000, 500000, 750000, MAX_TEXT};
     const int sizes[] = {15, 20, 25, 30};
     char *text = malloc(MAX_TEXT);
+    unsigned long seed = 20261115UL;
+    size_t i;
+    size_t j;
     if (text == NULL) {
         return EXIT_FAILURE;
     }
-    uint32_t seed = UINT32_C(20261115);
-    for (int i = 0; i < MAX_TEXT; ++i) {
+    for (i = 0; i < MAX_TEXT; ++i) {
         text[i] = random32(&seed) % 100U < 60U ? 'a' : 'b';
     }
 
     puts("N,M,patterns,brute_b_ms,kmp_ms");
-    for (size_t i = 0; i < sizeof lengths / sizeof lengths[0]; ++i) {
-        for (size_t j = 0; j < sizeof sizes / sizeof sizes[0]; ++j) {
+    for (i = 0; i < sizeof lengths / sizeof lengths[0]; ++i) {
+        for (j = 0; j < sizeof sizes / sizeof sizes[0]; ++j) {
             if (!measure(text, lengths[i], sizes[j])) {
                 fputs("Timing or match validation failed.\n", stderr);
                 free(text);

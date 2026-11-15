@@ -1,16 +1,23 @@
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 static int bucket_sort(int values[], size_t count)
 {
+    int lo;
+    int hi;
+    int value;
+    unsigned int span;
+    size_t buckets;
+    size_t *frequency;
+    size_t i;
+    size_t out = 0;
     if (count < 2) {
         return 1;
     }
 
-    int lo = values[0];
-    int hi = values[0];
-    for (size_t i = 1; i < count; ++i) {
+    lo = values[0];
+    hi = values[0];
+    for (i = 1; i < count; ++i) {
         if (values[i] < lo) {
             lo = values[i];
         }
@@ -20,25 +27,26 @@ static int bucket_sort(int values[], size_t count)
     }
 
     /* Unsigned subtraction gives the exact nonnegative distance. */
-    uintmax_t span = (uintmax_t)hi - (uintmax_t)lo;
-    if (span >= SIZE_MAX / sizeof(size_t)) {
+    span = (unsigned int)hi - (unsigned int)lo;
+    buckets = (size_t)span;
+    if ((unsigned int)buckets != span || buckets >= (size_t)-1 / sizeof *frequency) {
         return 0;
     }
-    size_t buckets = (size_t)span + 1;
-    size_t *frequency = calloc(buckets, sizeof *frequency);
+    ++buckets;
+    frequency = calloc(buckets, sizeof *frequency);
     if (frequency == NULL) {
         return 0;
     }
 
-    for (size_t i = 0; i < count; ++i) {
-        size_t index = (size_t)((uintmax_t)values[i] - (uintmax_t)lo);
+    for (i = 0; i < count; ++i) {
+        size_t index = (size_t)((unsigned int)values[i] - (unsigned int)lo);
         ++frequency[index];
     }
 
-    size_t out = 0;
-    int value = lo;
-    for (size_t i = 0; i < buckets; ++i) {
-        for (size_t copies = frequency[i]; copies > 0; --copies) {
+    value = lo;
+    for (i = 0; i < buckets; ++i) {
+        size_t copies;
+        for (copies = frequency[i]; copies > 0; --copies) {
             values[out++] = value;
         }
         if (value < hi) {
@@ -53,12 +61,13 @@ int main(void)
 {
     int values[] = {7, -1, 6, 9, -3, 5, 6, 4, 2, -12, 8, 0, 4, -3, 6};
     size_t count = sizeof values / sizeof values[0];
+    size_t i;
     if (!bucket_sort(values, count)) {
         fputs("Could not allocate the buckets.\n", stderr);
         return EXIT_FAILURE;
     }
     printf("Vec = {");
-    for (size_t i = 0; i < count; ++i) {
+    for (i = 0; i < count; ++i) {
         printf("%s%d", i == 0 ? "" : ", ", values[i]);
     }
     puts("}");
