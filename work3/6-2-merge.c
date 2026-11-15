@@ -8,7 +8,8 @@ typedef struct Node {
 
 static Node *link_nodes(Node nodes[], size_t count)
 {
-    for (size_t i = 0; i < count; ++i) {
+    size_t i;
+    for (i = 0; i < count; ++i) {
         nodes[i].prev = i == 0 ? NULL : &nodes[i - 1];
         nodes[i].next = i + 1 == count ? NULL : &nodes[i + 1];
     }
@@ -50,10 +51,11 @@ int main(void)
                      {12, NULL, NULL}, {13, NULL, NULL}};
     Node *lt1 = link_nodes(first, sizeof first / sizeof first[0]);
     Node *lt2 = link_nodes(second, sizeof second / sizeof second[0]);
+    const Node *p;
     merge_lists(&lt1, &lt2);
 
     printf("Lt2 = {");
-    for (const Node *p = lt2; p != NULL; p = p->next) {
+    for (p = lt2; p != NULL; p = p->next) {
         printf("%s%d", p == lt2 ? "" : ", ", p->value);
     }
     puts("}");
