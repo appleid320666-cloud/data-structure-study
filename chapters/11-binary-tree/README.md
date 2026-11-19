@@ -28,7 +28,8 @@ SYSU-2009B 第6题（森林转换补充）；GDUT-2014 二.8、三.2、六。题
 
 ## 学习记录
 
-- [2026-11-19 从视频 0606 接续教学](sessions/2026-11-19-storage-recursive-traversal.md)，存储结构与先、中、后序递归遍历，附 C 实现和完整自编题。首轮先序和指针关系正确，中序、后序、树高需订正，详见[错题记录](mistakes/2026-11-19-single-child-traversal-height.md)。
+- [2026-11-19 非递归先序与中序](sessions/2026-11-19-iterative-pre-in-order.md)，同一棵树的栈推演与 C 实现，附六结点练习。
+- [2026-11-19 从视频 0606 接续教学](sessions/2026-11-19-storage-recursive-traversal.md)，存储结构与先、中、后序递归遍历，附 C 实现和完整自编题。首轮错题已按用户确认登记为[已订正](mistakes/2026-11-19-single-child-traversal-height.md)。
 
 - [2026-11-19 新版 13.1 核对记录](sessions/2026-11-19-version-check-13-1.md)，题面与第一版答案一致；新版补充明确叶结点高度为 0，5 班实验安排为第（3）问。
 
