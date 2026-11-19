@@ -4,14 +4,14 @@
 
 ## 学习资料
 
-- [最新课件 ds-note1112.pdf](notes/ds-note1112.pdf)（2026-11-12 版，382 页）
+- [最新课件 ds-note1119.pdf](notes/ds-note1119.pdf)（2026-11-19 版，381 页）
 - [第 3 次平时作业题目清单](chapters/16-assignments/README.md#第-3-次平时作业)（习题 6.2、7.3、8.2、9.1）
 - [Next 表直接构造法：第（6）题教学与 Figure 7.8 式示意图](章节学习/第07章-字符串/7.1-直接构造Next表-第6题示范.md)
 
 ## 从这里开始
 
 - [课程与教材档案](docs/course-profile.md)
-- [课件第 0–16 章索引](docs/chapter-map.md)：按课件章节保存，附 PDF 页码与逐章备课卡。
+- [课件第 0–18 章索引](docs/chapter-map.md)：按新版章节对照既有主题目录，附 PDF 页码与逐章备课卡。
 - [笔试优先的学习路线](docs/study-plan.md)
 - [起点诊断（自编，含折叠解析）](exams/diagnostic.md)
 - [广东高校资料来源](exams/sources.md)与[具体题号映射](exams/question-index.md)
